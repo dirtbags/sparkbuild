@@ -16,7 +16,8 @@ make \
     -C $ImageBuilder \
     image \
     PROFILE="TLMR3040" \
-    PACKAGES="kmod-fs-ext4 kmod-usb-storage block-mount"
+    PACKAGES="kmod-fs-ext4 kmod-usb-storage block-mount uhttpd kmod-lib-crc32c lua" \
+    FILES=../files/
 
 cp $ImageBuilder/bin/ar71xx/*v2*factory.bin openwrt.bin
 

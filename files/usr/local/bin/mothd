@@ -1,0 +1,7 @@
+#! /bin/sh
+
+# Special single-instance mothd for non-vhosted sparks
+while true; do
+    /srv/moth/bin/once
+    sleep 5
+done
